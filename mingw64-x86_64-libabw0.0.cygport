@@ -1,0 +1,17 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross
+
+NAME="mingw64-x86_64-libabw0.0"
+VERSION=0.0.1
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="AbiWord document import library for Win64 toolchain"
+DESCRIPTION="Libabw is library providing ability to interpret and import
+AbiWord documents into various applications."
+HOMEPAGE="http://www.freedesktop.org/wiki/Software/libabw/"
+SRC_URI="http://dev-www.libreoffice.org/src/libabw-${VERSION}.tar.xz"
+SRC_DIR="libabw-${VERSION}"
+
+CYGCONF_ARGS="--disable-tools --without-docs"
+
+KEEP_LA_FILES="none"
